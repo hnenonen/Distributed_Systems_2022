@@ -1,5 +1,8 @@
 # Distributed_Systems_2022
 
+This is a project for Distributed Systems course in the fall of 2022 at Helsinki University.
+Project goal is to build a simple distributed system.
+
 __Project minimum requirements:__
 * at least 3 nodes
 * Shared distributed state 
@@ -18,15 +21,16 @@ Additional features: scalability and performance
  
 __DLs__
 
-|21.11 | 23.59 | Design Plan, pdf-format                           |
+|Date  | Time  | Task                                              |
 |------|:-----:|--------------------------------------------------:|
+|21.11 | 23.59 | Design Plan, pdf-format                           |
 |19.12 | 23.59 | Final project deliverables (quiz, attachments/URL)|
 
 
 __Work time tracking, goal for the project is 50h per person (~8hour per week)__
 
 |         | 44   | 45 | 46 | 47 | 48 | 49 | 50 | total |
-|---------|:----:|:--:|:--:|:--:|:--:|:--:|    |------:|
+|---------|:----:|:--:|:--:|:--:|:--:|:--:|:--:|------:|
 |Heikki   |  1,5 |    |    |    |    |    |    |       |
 |Johannes |      |    |    |    |    |    |    |       |
 |   x     |      |    |    |    |    |    |    |       |
