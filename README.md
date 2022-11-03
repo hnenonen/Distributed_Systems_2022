@@ -27,11 +27,10 @@ __DLs__
 |19.12 | 23.59 | Final project deliverables (quiz, attachments/URL)|
 
 
-__Common working times__
 
+__Common working times__
 * Wednesday 8:30 - 10.00, G103g
 * Friday 12:00 - 14.00, G103g
-
 The last reserved instance for G103g for us is at Friday 16.12.
 
 
