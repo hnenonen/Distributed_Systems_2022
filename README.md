@@ -27,11 +27,19 @@ __DLs__
 |19.12 | 23.59 | Final project deliverables (quiz, attachments/URL)|
 
 
+__Common working times__
+
+* Wednesday 8:30 - 10.00, G103g
+* Friday 12:00 - 14.00, G103g
+
+The last reserved instance for G103g for us is at Friday 16.12.
+
+
 __Work time tracking, goal for the project is 50h per person (~8hour per week)__
 
 |         | 44   | 45 | 46 | 47 | 48 | 49 | 50 | total |
 |---------|:----:|:--:|:--:|:--:|:--:|:--:|:--:|------:|
-|Heikki   |  1,5 |    |    |    |    |    |    |       |
+|Heikki   |  2,5 |    |    |    |    |    |    |       |
 |Johannes |      |    |    |    |    |    |    |       |
 |Tapio    |      |    |    |    |    |    |    |       |
 
