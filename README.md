@@ -21,10 +21,10 @@ Additional features: scalability and performance
  
 __DLs__
 
-|Date  | Time  | Task                                              |
-|------|:-----:|--------------------------------------------------:|
-|21.11 | 23.59 | Design Plan, pdf-format                           |
-|19.12 | 23.59 | Final project deliverables (quiz, attachments/URL)|
+|Date  | Time  | Task                                              | Link |
+|------|:-----:|:-------------------------------------------------:|------:|
+|21.11 | 23.59 | Design Plan, pdf-format                           |https://docs.google.com/document/d/1fJd8_W15DsSGrxAkFk5HENiKzcKjDKSkS5_qOF-lvFY/edit|
+|19.12 | 23.59 | Final project deliverables (quiz, attachments/URL)|https://docs.google.com/document/d/1CyhxcOlO-WnaJNuB0WoZ1rsZk_Qe1P3M5C8fD88gyZM/edit|
 
 
 
