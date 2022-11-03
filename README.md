@@ -39,7 +39,7 @@ __Work time tracking, goal for the project is 50h per person (~8hour per week)__
 |         | 44   | 45 | 46 | 47 | 48 | 49 | 50 | total |
 |---------|:----:|:--:|:--:|:--:|:--:|:--:|:--:|------:|
 |Heikki   |  2,5 |    |    |    |    |    |    |       |
-|Johannes |      |    |    |    |    |    |    |       |
+|Johannes |  1,5 |    |    |    |    |    |    |       |
 |Tapio    |  1,5 |    |    |    |    |    |    |       |
 
 __Project parts:__
