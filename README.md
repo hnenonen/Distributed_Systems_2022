@@ -6,7 +6,7 @@ Project goal is to build a simple distributed system.
 __Project minimum requirements:__
 * at least 3 nodes
 * Shared distributed state 
-* + 3 of the following: Naming and node discovery, Synchronization and consistency, Fault tolerance, Consensus
+* 3 of the following: Naming and node discovery, Synchronization and consistency, Fault tolerance, Consensus
 
 __Requirements for nodes:__
 1. be running on a separate computer / virtual machine
