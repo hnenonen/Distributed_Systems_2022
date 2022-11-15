@@ -30,8 +30,10 @@ __DLs__
 
 __Common working times__
 * Wednesday 8:30 - 10.00, G103g
-* Friday 12:00 - 14.00, G103g
-The last reserved instance for G103g for us is at Friday 16.12.
+* Thursday 8:30 - 10.00, G103g
+
+(we still have room every Friday 12:00 - 14.00, G103g
+The last reserved instance for G103g for us is at Friday 16.12.)
 
 
 __Work time tracking, goal for the project is 50h per person (~8hour per week)__
