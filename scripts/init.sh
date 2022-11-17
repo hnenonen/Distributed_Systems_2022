@@ -90,5 +90,7 @@ sudo systemctl enable containerd
 printgr "Started containerd" "For more information run:"
 printf "sudo systemctl status containerd \n"
 printgr "Node has been initialized"
-printrd "You have to connect to master node manually\!" "Run:"
+printrd "If this is a worker node, you have to connect to master node manually\!" "Run:"
 printf "%s\n" "kubeadm join 192.168.1.14:6443 --token TOKEN \\" "    --discovery-token-ca-cert-hash HASH"
+printrd "If this is a master node, run script:"
+printf "initmaster.sh"
