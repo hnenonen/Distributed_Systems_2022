@@ -6,7 +6,7 @@ Project goal is to build a simple distributed system.
 __Project minimum requirements:__
 * at least 3 nodes
 * Shared distributed state 
-* + 3 of the following: Naming and node discovery, Synchronization and consistency, Fault tolerance, Consensus
+* 3 of the following: Naming and node discovery, Synchronization and consistency, Fault tolerance, Consensus
 
 __Requirements for nodes:__
 1. be running on a separate computer / virtual machine
@@ -21,19 +21,28 @@ Additional features: scalability and performance
  
 __DLs__
 
-|Date  | Time  | Task                                              |
-|------|:-----:|--------------------------------------------------:|
-|21.11 | 23.59 | Design Plan, pdf-format                           |
-|19.12 | 23.59 | Final project deliverables (quiz, attachments/URL)|
+|Date  | Time  | Task                                              | Link |
+|------|:-----:|:-------------------------------------------------:|------:|
+|21.11 | 23.59 | Design Plan, pdf-format                           |[Design Plan](https://docs.google.com/document/d/1fJd8_W15DsSGrxAkFk5HENiKzcKjDKSkS5_qOF-lvFY/edit)|
+|19.12 | 23.59 | Final project deliverables (quiz, attachments/URL)|[Final report](https://docs.google.com/document/d/1CyhxcOlO-WnaJNuB0WoZ1rsZk_Qe1P3M5C8fD88gyZM/edit)|
+
+
+
+__Common working times__
+* Wednesday 8:30 - 10.00, G103g
+* Thursday 8:30 - 10.00, G103g
+
+(we still have room every Friday 12:00 - 14.00, G103g
+The last reserved instance for G103g for us is at Friday 16.12.)
 
 
 __Work time tracking, goal for the project is 50h per person (~8hour per week)__
 
 |         | 44   | 45 | 46 | 47 | 48 | 49 | 50 | total |
 |---------|:----:|:--:|:--:|:--:|:--:|:--:|:--:|------:|
-|Heikki   |  1,5 |    |    |    |    |    |    |       |
-|Johannes |      |    |    |    |    |    |    |       |
-|   x     |      |    |    |    |    |    |    |       |
+|Heikki   |  2,5 |  6  | 2   |    |    |    |    |       |
+|Johannes |  2,5 |  5  | 5   |    |    |    |    |       |
+|Tapio    |  1,5 |  3  | 10   |    |    |    |    |       |
 
 __Project parts:__
 * Design plan ( 5 points)
