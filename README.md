@@ -40,7 +40,7 @@ __Work time tracking, goal for the project is 50h per person (~8hour per week)__
 
 |         | 44   | 45 | 46 | 47 | 48 | 49 | 50 | total |
 |---------|:----:|:--:|:--:|:--:|:--:|:--:|:--:|------:|
-|Heikki   |  2,5 |  6  | 2   |    |    |    |    |       |
+|Heikki   |  2,5 |  6  | 5   | 1   |    |    |    |       |
 |Johannes |  2,5 |  5  | 5   |    |    |    |    |       |
 |Tapio    |  1,5 |  3  | 10   |    |    |    |    |       |
 
@@ -52,3 +52,4 @@ __Project parts:__
 
 Maybe useful links:
 * https://towardsdatascience.com/lets-build-a-simple-distributed-computing-system-for-modern-cloud-part-one-e2b745126211
+* https://github.com/rabbitmq/diy-kubernetes-examples/blob/master/kind/base/deployment.yaml
