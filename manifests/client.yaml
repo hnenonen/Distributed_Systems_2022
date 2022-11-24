@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dep
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: client
+  template:
+    metadata:
+      labels:
+        app: client
+    spec:
+      containers:
+      - image: tsadom/distributed-client:latest
+        name: client
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: svc
+spec:
+  selector:
+    app: client
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: 80
