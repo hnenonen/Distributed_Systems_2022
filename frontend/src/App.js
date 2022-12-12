@@ -1,24 +1,15 @@
 import './App.css'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { Container } from 'react-bootstrap'
-import axios from 'axios'
+import { Route, Routes } from 'react-router-dom'
+import FileList from './components/FileList'
+import FilePage from './components/FilePage'
 
-const API_URL = 'http://86.50.228.193'
-
-const App = () => {
-  const [filelist, setFilelist] = useState()
-
-  useEffect(() => {
-    const fetchFilelist = async () => {
-      const { data } = await axios.get(`${API_URL}/api/filelist`)
-      setFilelist(data)
-    }
-    fetchFilelist()
-  }, [filelist])
-
-  return <Container>
-    {filelist?.map((f, i) => <div key={i}>{f.name}</div>)}
-  </Container>
-}
+const App = () => <Container>
+  <Routes>
+    <Route path='/' element={<FileList />}/>
+    <Route path='/files/:file' element={<FilePage />} />
+  </Routes>
+</Container>
 
 export default App
