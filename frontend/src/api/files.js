@@ -12,6 +12,6 @@ export const getFile = async fileName => {
 }
 
 export const sendFile = async payload => {
-  const { data } = await axios.post(`${API_URL}/files`, payload)
+  const { data } = await axios.post(`${API_URL}/files`, payload, { headers: { 'Content-Type': 'multipart/form-data' } })
   return data
 }

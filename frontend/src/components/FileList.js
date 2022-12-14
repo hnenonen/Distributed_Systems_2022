@@ -1,16 +1,26 @@
 import React, { useState } from 'react'
-import { getFilelist } from '../api/files'
+import { getFilelist, sendFile } from '../api/files'
 import { useAsyncEffect } from '../hooks/async'
 import { useNavigate } from 'react-router-dom'
 
 const FileList = () => {
   const [files, setFilelist] = useState()
+  const [newFile, setNewFile] = useState()
   const navigate = useNavigate()
 
   useAsyncEffect(async () => {
     const data = await getFilelist()
     setFilelist(data)
   }, [])
+
+  const fileSend = async (e) => {
+    e.preventDefault()
+    const formData = new FormData()
+    formData.append('file', newFile)
+    await sendFile(formData)
+    const data = await getFilelist()
+    setFilelist(data)
+  }
 
   return <>
     <h1>Available files:</h1>
@@ -22,6 +32,11 @@ const FileList = () => {
         >{f.name}</a>
       </li>)}
     </ul>
+    <h2>Upload new file:</h2>
+    <form onSubmit={(e) => fileSend(e)} >
+      <input type='file' onChange={(e) => setNewFile(e.target.files[0])} />
+      <input type='submit' />
+    </form>
   </>
 }
 

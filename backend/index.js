@@ -52,6 +52,7 @@ app.post('/api/files', (req, res) => {
     })
     res.send('STATUS')
   } catch(e) {
+    console.log(req.files)
     res.status(500).send(e)
   }
 })
