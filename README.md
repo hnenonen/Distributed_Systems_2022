@@ -46,7 +46,7 @@ __Work time tracking, goal for the project is 50h per person (~8hour per week)__
 
 __Project parts:__
 * Design plan ( 5 points)
-* Video or demonstration in a demo session ( 5 points, maximum duration 5 minutes)
+* [Video or demonstration in a demo session ( 5 points, maximum duration 5 minutes)](https://docs.google.com/document/d/1sdGZKRIdNkg2QosApNvkyOgMDKfh7y__ZESQXymnZLQ/edit?usp=sharing)
 * Source code in repository (5 points)
 * Final report (15 points)
 
