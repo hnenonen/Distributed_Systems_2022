@@ -1,10 +1,11 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { getFilelist, sendFile } from '../api/files'
 import { useAsyncEffect } from '../hooks/async'
 import { useNavigate } from 'react-router-dom'
 
 const FileList = () => {
   const [files, setFilelist] = useState()
+  const [uploaded, setUploaded] = useState(false)
   const [newFile, setNewFile] = useState()
   const navigate = useNavigate()
 
@@ -18,9 +19,17 @@ const FileList = () => {
     const formData = new FormData()
     formData.append('file', newFile)
     await sendFile(formData)
+    setUploaded(true)
     const data = await getFilelist()
     setFilelist(data)
   }
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setUploaded(false)
+    }, 2000)
+    return () => clearTimeout(timer)
+  }, [uploaded])
 
   return <>
     <h1>Available files:</h1>
@@ -37,6 +46,9 @@ const FileList = () => {
       <input type='file' onChange={(e) => setNewFile(e.target.files[0])} />
       <input type='submit' />
     </form>
+    {uploaded &&
+      <p>Uploaded</p>
+    }
   </>
 }
 
