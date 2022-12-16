@@ -3,6 +3,8 @@
 This is a project for Distributed Systems course in the fall of 2022 at Helsinki University.
 Project goal is to build a simple distributed system.
 
+System is running [here](86.50.228.193)
+
 __Project minimum requirements:__
 * at least 3 nodes
 * Shared distributed state 
@@ -34,15 +36,6 @@ __Common working times__
 
 (we still have room every Friday 12:00 - 14.00, G103g
 The last reserved instance for G103g for us is at Friday 16.12.)
-
-
-__Work time tracking, goal for the project is 50h per person (~8hour per week)__
-
-|         | 44   | 45 | 46 | 47 | 48 | 49 | 50 | total |
-|---------|:----:|:--:|:--:|:--:|:--:|:--:|:--:|------:|
-|Heikki   |  2,5 |  6  | 5   | 1   |    |    |    |       |
-|Johannes |  2,5 |  5  | 5   |    |    |    |    |       |
-|Tapio    |  1,5 |  3  | 10   |    |    |    |    |       |
 
 __Project parts:__
 * Design plan ( 5 points)
