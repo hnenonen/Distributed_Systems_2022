@@ -3,7 +3,7 @@
 This is a project for Distributed Systems course in the fall of 2022 at Helsinki University.
 Project goal is to build a simple distributed system.
 
-System is running [here](86.50.228.193)
+System is running [here](http://86.50.228.193/)
 
 __Project minimum requirements:__
 * at least 3 nodes
