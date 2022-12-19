@@ -1,17 +1,23 @@
 import React, { useState, useEffect } from 'react'
 import { getFilelist, sendFile } from '../api/files'
-import { useAsyncEffect } from '../hooks/async'
+// import { useAsyncEffect } from '../hooks/async'
 import { useNavigate } from 'react-router-dom'
 
 const FileList = () => {
   const [files, setFilelist] = useState()
   const [uploaded, setUploaded] = useState(false)
   const [newFile, setNewFile] = useState()
+  const [host, setHost] = useState()
   const navigate = useNavigate()
 
-  useAsyncEffect(async () => {
-    const data = await getFilelist()
-    setFilelist(data)
+  useEffect(() => {
+    getFilelist().then(data => {
+      console.log(data, 'MOI')
+      setFilelist(data.files)
+      setHost(data.host)
+    }).catch(e => {
+      console.error(e)
+    })
   }, [])
 
   const fileSend = async (e) => {
@@ -21,7 +27,8 @@ const FileList = () => {
     await sendFile(formData)
     setUploaded(true)
     const data = await getFilelist()
-    setFilelist(data)
+    setFilelist(data.files)
+    setHost(data.host)
   }
 
   useEffect(() => {
@@ -32,6 +39,9 @@ const FileList = () => {
   }, [uploaded])
 
   return <>
+    <br />
+    <h2>Hajoitettu järjestelmä | Destroyed system</h2>
+    <hr />
     <h1>Available files:</h1>
     <ul>
       {files?.map((f, i) => <li key={i}>
@@ -41,6 +51,7 @@ const FileList = () => {
         >{f.name}</a>
       </li>)}
     </ul>
+    <p>From host: {host}</p>
     <h2>Upload new file:</h2>
     <form onSubmit={(e) => fileSend(e)} >
       <input type='file' onChange={(e) => setNewFile(e.target.files[0])} />

@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: hajobe
+  name: hajobe
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: hajobe
+  template:
+    metadata:
+      labels:
+        app: hajobe
+    spec:
+      containers:
+      - name: hajobe
+        image: lares/hajobe:latest
+        ports:
+          - name: http
+            containerPort: 3001
+        volumeMounts:
+        - mountPath: /usr/app/data
+          name: datavol
+      - name: hajolistener
+        image: lares/hajolistener:latest
+        ports:
+          - name: http
+            containerPort: 3010
+        volumeMounts:
+        - mountPath: /usr/app/data
+          name: datavol
+      volumes:
+      - name: datavol
+        hostPath:
+          path: /home/ubuntu/data
+          type: DirectoryOrCreate
